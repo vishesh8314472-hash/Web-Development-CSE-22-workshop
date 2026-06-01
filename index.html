@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculator</title>
+</head>
+<body>
+    <h1>Factorial Calculator</h1>
+    <div>
+        <input type="number" id="inputNum" placeholder="Enter Your Number">
+        <button id="showans">Calculate</button>
+    </div>
+    <p id = "result" >Answer : </p>
+
+    <script>
+        const input= document.getElementById("inputNum");
+        const result = document.getElementById("result");
+        const showAns = document.getElementById("showans");
+
+        function factorial(input) {
+            let result = 1 ;
+            for(let i = 1 ; i <= input ; i++) {
+                result *= i ;
+            }
+            return result ;
+        }
+
+        function handleCalculate() {
+            const value = Number(input.value);
+
+            if (!Number.isInteger(value) || value < 0) {
+                result.textContent = "Please enter a valid Number";
+                return;
+            }
+
+            result.textContent = value + "! = " + factorial(value);
+        }
+
+        showAns.addEventListener("click", handleCalculate); 
+    </script>
+</body>
+</html>
