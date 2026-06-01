@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-color: #2e2927;
+    color: whitesmoke;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+.board {
+    margin-top: 5vh;
+    margin-right: 50px;
+    margin-left: 50px;
+    height: 50vh;
+    width: 50vh;
+}
+
+.sideView {
+    margin-top: 5vh;
+    height: 50vh;
+    width: 50vh;
+}
+
+.sideBar {
+    background-color: #221f1d;
+    height: 100vh ;
+    width: 30vh ;
+}
+
+.tagline {
+    font-size: 50px;
+    text-align: center;
+}
+
+.twoThings {
+    text-align: center;
+}
+
+.grey {
+    color: grey;
+}
+
+.playOnline {
+    margin:auto;
+    margin-left: 100px ;
+    margin-top: 10px;
+}
+
+.playOnline button {
+    height: 60px;
+    min-width: 300px;
+    font-size: larger;
+    color: whitesmoke;
+    font-weight: bolder;
+    background-color: #80aa53;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.lowFont {
+    font-size: 10px;
+}
+
+.row {
+    height: 6vh;
+    display: flex;
+}
+
+.col {
+    min-height: 6vh;
+    min-width: 6vh;
+}
+
+.col img {
+    max-height: 6vh;
+}
+
+.colour-2{
+    background-color: #ebeed2;
+}
+
+.colour-1{
+    background-color: #789857;
+
+}
+
+.logoBar {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.logoBar .logoName {
+    font-size: 30px;
+}
+
+.logoBar img {
+    height: 50px;
+}
+
+.chessGreen {
+    background-color: #80aa53;
+    border-radius: 10px;
+    padding-left: 40px;
+}
+
+.chessGrey {
+    background-color: grey;
+    border-radius: 10px;
+    padding-left: 40px;
+}
